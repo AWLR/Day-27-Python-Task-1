@@ -4,7 +4,7 @@ import random
 
 
 window = tk.Tk()
-window.geometry("900x460")
+window.geometry("840x460")
 window.title("Dice roll")
 
 
@@ -45,17 +45,17 @@ def dice_roll():
 
 
 button_roll = tk.Button(window, text="ROLL", bg="black", fg="white", font="Times 20 bold", command=dice_roll)
-button_roll.place(x=230, y=0)
+button_roll.place(x=360, y=0)
 
 
 def roll_dice():
     a = random.randint(1,6)
     result_label = tk.Label(window, text=a, font="Times 20 bold")
-    result_label.place(x=250, y=350)
+    result_label.place(x=385, y=350)
 
 
 button_click = tk.Button(window, text="click", command=roll_dice)
-button_click.place(x=270, y=320)
+button_click.place(x=380, y=320)
    
 window.mainloop()
 
